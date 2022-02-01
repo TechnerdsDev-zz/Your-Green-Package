@@ -1,0 +1,44 @@
+import mainLogo from "../../assets/images/logo.png";
+import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+
+export default function Header() {
+  return (
+    <header>
+      <div className="header">
+        <div className="auto_container">
+          <div className="header_inner">
+            <div className="logo">
+              <a href="#">
+                <img src={mainLogo} alt="Logo" />
+              </a>
+            </div>
+            <nav>
+              <div className="main_nav">
+                <ul>
+                  <li>
+                    <NavLink to="/" activeClassName="active">Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="about">About Us</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="faqs" activeClassName="active">FAQ</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="contact">Contact Us</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="order" className="custom_btn">
+                      Order Now
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
