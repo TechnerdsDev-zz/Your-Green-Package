@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import product from "../../assets/images/product.png";
 import order from "../../assets/images/order.png";
 import delivery from "../../assets/images/delivery.png";
@@ -6,14 +6,32 @@ import Testimonial from "../elements/Testimonial";
 import Blogs from "../elements/Blogs";
 import Banner from "../elements/Banner";
 import Partners from "../elements/Partners";
+import axios from "axios";
 export default function Home() {
+  const joinList = useRef(null);
+  const executeScroll = () => joinList.current.scrollIntoView();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(e.target[0].value, e.target[1].value);
+    const obj = {
+      name: e.target[0].value,
+      phone: e.target[1].value,
+    };
+    await axios({
+      method: "POST",
+      url: "https://formspree.io/f/mleapgkq",
+      data: obj,
+    }).then((response) => {
+      console.log(response);
+    });
+  };
   return (
     <div className="main_container padding_top">
       {/* banner section start */}
-      <Banner />
+      <Banner scroller={executeScroll} />
       {/* banner section end */}
       {/* partner section start */}
-      <Partners />
+      <Partners isHome={true} />
       {/* partner section end */}
       {/* work process section start */}
       <div className="process">
@@ -75,7 +93,7 @@ export default function Home() {
       <Testimonial />
       {/* testimonials section end */}
       {/* join list section start */}
-      <div className="join">
+      <div ref={joinList} className="join">
         <div className="auto_container">
           <div className="join_inner">
             <div className="join_main">
@@ -83,17 +101,22 @@ export default function Home() {
                 <h2>Join The List</h2>
               </div>
               <div className="custom_form">
-                <form action="">
+                <form onSubmit={handleSubmit} action="">
                   <ul>
                     <li>
                       <div className="custom_field">
-                        <input type="text" placeholder="Your Name" />
+                        <input
+                          name="name"
+                          type="text"
+                          placeholder="Your Name"
+                        />
                       </div>
                     </li>
                     <li>
                       <div className="custom_field">
                         <input
                           type="number"
+                          name="phone"
                           placeholder="Your Cellphone Number"
                         />
                       </div>
@@ -101,7 +124,7 @@ export default function Home() {
                     <li>
                       <div className="my_btn">
                         <input
-                          type="button"
+                          type="submit"
                           className="custom_btn"
                           value="Submit"
                           name=""

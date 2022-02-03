@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
+import Accordian from "../elements/Accordian";
 export default function Faqs() {
   return (
     <div className="main_container padding_top">
@@ -14,212 +15,116 @@ export default function Faqs() {
             <div className="accodian_main">
               <Accordion defaultActiveKey="0" flush>
                 <ul>
-                  <li>
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header>
-                        <b>Q.</b> Who Can Place An Adult Use Delivery Order?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p>
-                          Anyone who is 21+ years of age, has created an account
-                          with NETA, lives in the delivery radius, and has
-                          completed the ID verification step.
-                        </p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="1">
-                      <Accordion.Header>
-                        <b>Q.</b> Who Can Accept An Adult Use Delivery Order?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="2">
-                      <Accordion.Header>
-                        <b>Q.</b> How Do I Order Adult Use Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="3">
-                      <Accordion.Header>
-                        <b>Q.</b> Where Do You Deliver?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="4">
-                      <Accordion.Header>
-                        <b>Q.</b> How Do I Know When To Expect A Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="5">
-                      <Accordion.Header>
-                        <b>Q.</b> What Do I Need In Preparation For My Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="6">
-                      <Accordion.Header>
-                        <b>Q.</b> How Do I Know My ID Is Secure?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="7">
-                      <Accordion.Header>
-                        <b>Q.</b> Where Can I Receive A Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="8">
-                      <Accordion.Header>
-                        <b>Q.</b> How Do I Pay For Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="9">
-                      <Accordion.Header>
-                        <b>Q.</b> Can I Modify A Delivery Order After It’s
-                        Placed?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="10">
-                      <Accordion.Header>
-                        <b>Q.</b> How Do I Reschedule My Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="11">
-                      <Accordion.Header>
-                        <b>Q.</b> What Happens If I’m Unavailable To Accept My
-                        Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="12">
-                      <Accordion.Header>
-                        <b>Q.</b> How Often Do You Deliver?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="13">
-                      <Accordion.Header>
-                        <b>Q.</b> When Do You Plan On Expanding Delivery To My
-                        Area?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="14">
-                      <Accordion.Header>
-                        <b>Q.</b> What Is The “CCC”?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="15">
-                      <Accordion.Header>
-                        <b>Q.</b> How Discreet Is Cannabis/Marijuana Delivery?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="16">
-                      <Accordion.Header>
-                        <b>Q.</b> Accordion Item #
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
-                  <li>
-                    <Accordion.Item eventKey="17">
-                      <Accordion.Header>
-                        <b>Q.</b> What Happens If My Government ID Address And
-                        Delivery Address Don’t Match?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <b>A.</b>
-                        <p></p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </li>
+                  <Accordian
+                    question={"Who Can Place An Adult Use Delivery Order?"}
+                    answer={
+                      " Anyone who is 21+ years of age, has created an account with NETA, lives in the delivery radius, and hascompleted the ID verification step."
+                    }
+                    eventKey={"1"}
+                  />
+                  <Accordian
+                    question={"Who Can Accept An Adult Use Delivery Order?"}
+                    answer={""}
+                    eventKey={"2"}
+                  />
+                  <Accordian
+                    question={"How Do I Order Adult Use Delivery"}
+                    answer={""}
+                    eventKey={"3"}
+                  />
+                  <Accordian
+                    question={" Where Do You Deliver?"}
+                    answer={""}
+                    eventKey={"4"}
+                  />
+                  <Accordian
+                    question={"How Do I Know When To Expect A Delivery?"}
+                    answer={""}
+                    eventKey={"5"}
+                  />
+                  <Accordian
+                    question={"What Do I Need In Preparation For My Delivery?"}
+                    answer={""}
+                    eventKey={"6"}
+                  />
+                  <Accordian
+                    question={"How Do I Know My ID Is Secure?"}
+                    answer={""}
+                    eventKey={"7"}
+                  />
+                  <Accordian
+                    question={"Where Can I Receive A Delivery?"}
+                    answer={""}
+                    eventKey={"8"}
+                  />
+                  <Accordian
+                    question={"Where Do You Deliver?"}
+                    answer={""}
+                    eventKey={"9"}
+                  />
+                  <Accordian
+                    question={"How Do I Pay For Delivery?"}
+                    answer={""}
+                    eventKey={"9a"}
+                  />
+                  <Accordian
+                    question={
+                      "Can I Modify A Delivery Order After It’s Placed?"
+                    }
+                    answer={""}
+                    eventKey={"8a"}
+                  />
+                  <Accordian
+                    question={"How Do I Reschedule My Delivery?"}
+                    answer={""}
+                    eventKey={"7a"}
+                  />
+                  <Accordian
+                    question={
+                      "What Happens If I’m Unavailable To Accept My Delivery?"
+                    }
+                    answer={""}
+                    eventKey={"6a"}
+                  />
+                  <Accordian
+                    question={" How Often Do You Deliver?"}
+                    answer={""}
+                    eventKey={"5a"}
+                  />
+                  <Accordian
+                    question={
+                      "When Do You Plan On Expanding Delivery To My Area?"
+                    }
+                    answer={""}
+                    eventKey={"4a"}
+                  />
+                  <Accordian
+                    question={"What Is The “CCC”?"}
+                    answer={""}
+                    eventKey={"3a"}
+                  />
+                  <Accordian
+                    question={"Where Can I Receive A Delivery?"}
+                    answer={""}
+                    eventKey={"2a"}
+                  />
+                  <Accordian
+                    question={"How Discreet Is Cannabis/Marijuana Delivery?"}
+                    answer={""}
+                    eventKey={"1a"}
+                  />
+                  <Accordian
+                    question={" Accordion Item #"}
+                    answer={""}
+                    eventKey={"1b"}
+                  />
+                  <Accordian
+                    question={
+                      "What Happens If My Government ID Address And  Delivery Address Don’t Match?"
+                    }
+                    answer={""}
+                    eventKey={"2b"}
+                  />
                 </ul>
               </Accordion>
             </div>
