@@ -4,7 +4,12 @@ import cammcan from "../../assets/images/cammcan.png";
 import mission from "../../assets/images/mission_dispensaries.png";
 import neta from "../../assets/images/neta.png";
 import rise from "../../assets/images/rise.png";
+import { useNavigate } from "react-router";
 export default function Partners({ isHome }) {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("garden-remedies-newton");
+  };
   return (
     <div className={isHome ? "" : "main_container padding_top"}>
       <div className="partner">
@@ -17,7 +22,7 @@ export default function Partners({ isHome }) {
             <div className="partner_list">
               <ul>
                 <li>
-                  <div className="partner_main">
+                  <div onClick={clickHandler} className="partner_main">
                     <span>
                       <img src={garden} alt="Logo" />
                     </span>
@@ -68,14 +73,17 @@ export default function Partners({ isHome }) {
                   </div>
                 </li>
                 <li>
-                  <div className="partner_main">
+                  <div style={{ height: "30%" }} className="partner_main">
                     <span>
                       <img src={mission} alt="Logo" />
                     </span>
                     <h4>Garden Remedies</h4>
                     <p>
-                      Your Green Package is making Cannabis Deliveries in the
-                      Greater Boston, Newton, and Northamptonarea.
+                      Dedicated to bringing world-class cannabis products to
+                      Massachusetts, CommCan is the Commonwealth's true
+                      "home-grown" cannabis company. Family-owned and operated
+                      by native Massachusetts residents without any outside
+                      consultants, investors or management companies.
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
@@ -89,10 +97,13 @@ export default function Partners({ isHome }) {
                     <span>
                       <img src={cammcan} alt="Logo" />
                     </span>
-                    <h4>Garden Remedies</h4>
+                    <h4>CommCan</h4>
                     <p>
-                      Your Green Package is making Cannabis Deliveries in the
-                      Greater Boston, Newton, and Northamptonarea.
+                      Dedicated to bringing world-class cannabis products to
+                      Massachusetts, CommCan is the Commonwealth's true
+                      "home-grown" cannabis company. Family-owned and operated
+                      by native Massachusetts residents without any outside
+                      consultants, investors or management companies.
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">

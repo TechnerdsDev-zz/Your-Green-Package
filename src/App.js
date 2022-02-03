@@ -8,14 +8,16 @@ import "./assets/css/style.css";
 import "./assets/css/responsive.css";
 import Home from "./components/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useLocation } from "react-router";
 import Faqs from "./components/Faqs/Faqs";
+
 import { Modal, Button } from "react-bootstrap";
 import GardenRemediesNewton from "./components/gardenremedies/GardenRemediesNewton";
 import Partners from "./components/elements/Partners";
 function App() {
   const [show, setShow] = React.useState(true);
   const [older, setOlder] = React.useState(true);
-  console.log(older);
+
   const handleClose = () => {
     setShow(true);
 
@@ -23,6 +25,10 @@ function App() {
   };
   const handleYes = () => setShow(false);
   const handleShow = () => setShow(true);
+  React.useEffect(() => {
+    console.log("sjsj");
+    window.scrollTo(0, 0);
+  }, [window.location.pathname]);
   return (
     <div className="App">
       <Modal show={show} onHide={handleClose}>

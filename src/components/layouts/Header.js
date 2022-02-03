@@ -1,9 +1,14 @@
 import mainLogo from "../../assets/images/logo.png";
+import * as React from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 export default function Header() {
   const location = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <header>
       <div className="header">
