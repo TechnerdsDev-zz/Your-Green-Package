@@ -5,11 +5,23 @@ import mission from "../../assets/images/mission_dispensaries.png";
 import neta from "../../assets/images/neta.png";
 import rise from "../../assets/images/rise.png";
 import { useNavigate } from "react-router";
+import { useState, useEffect } from "react";
+import { arr } from "../../assets/data/Book";
 export default function Partners({ isHome }) {
+  const [code, setCode] = useState();
+  const [despensaries, setDespensaries] = useState("");
   const navigate = useNavigate();
   const clickHandler = () => {
     navigate("garden-remedies-newton");
   };
+  const handleChange = (e) => {
+    setCode(e.target.value);
+  };
+  const handleClick = () => {
+    const obj = arr.find((el) => el["Zip Code"] == code);
+    setDespensaries(obj.Dispensaries);
+  };
+
   return (
     <div className={isHome ? "" : "main_container padding_top"}>
       <div className="partner">
@@ -119,8 +131,17 @@ export default function Partners({ isHome }) {
                 See which Partner delivers to your Zipcode
               </label>
               <div className="custom_searchField">
-                <input type="text" placeholder="Enter Your Zipcode" />
-                <button className="custom_btn">Search</button>
+                <input
+                  onChange={handleChange}
+                  value={code}
+                  type="number"
+                  placeholder="Enter Your Zipcode"
+                />
+                <button onClick={handleClick} className="custom_btn">
+                  Search
+                </button>
+                <hr />
+                <span>{despensaries}</span>
               </div>
             </div>
           </div>

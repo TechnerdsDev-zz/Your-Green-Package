@@ -25,10 +25,7 @@ function App() {
   };
   const handleYes = () => setShow(false);
   const handleShow = () => setShow(true);
-  React.useEffect(() => {
-    console.log("sjsj");
-    window.scrollTo(0, 0);
-  }, [window.location.pathname]);
+
   return (
     <div className="App">
       <Modal show={show} onHide={handleClose}>
