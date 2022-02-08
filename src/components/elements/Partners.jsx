@@ -73,7 +73,7 @@ export default function Partners({ isHome }) {
                   </div>
                 </li>
                 <li>
-                  <div style={{ height: "30%" }} className="partner_main">
+                  <div className="partner_main">
                     <span>
                       <img src={mission} alt="Logo" />
                     </span>

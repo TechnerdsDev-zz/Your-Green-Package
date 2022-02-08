@@ -777,6 +777,30 @@ main {
       color: $mainClrTwo;
     }
   }
+  select {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: $mainClrTwo;
+    background-color: #fff;
+    border: 1px solid $mainClr;
+    @include radius_5();
+    &::-webkit-input-placeholder {
+      color: $mainClrTwo;
+    }
+  }
+  textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: $mainClrTwo;
+    background-color: #fff;
+    border: 1px solid $mainClr;
+    @include radius_5();
+    &::-webkit-input-placeholder {
+      color: $mainClrTwo;
+    }
+  }
 }
 input[type="number"] {
   &::-webkit-inner-spin-button,
@@ -1070,6 +1094,206 @@ input[type="number"] {
       color: $mainClrTwo;
       font-family: $TahomaRegular;
       line-height: 1.4;
+    }
+  }
+}
+.about_package {
+  width: 100%;
+  padding: 70px 0;
+}
+.about_packageMain {
+  width: 100%;
+}
+.ab_packageSec {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ab_packageLeft {
+  width: 30%;
+  max-width: 250px;
+  span {
+    width: 100%;
+    max-width: 225px;
+    display: block;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+.ab_packageRight {
+  width: 70%;
+  padding-left: 50px;
+  h3 {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: $TahomaRegular;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: $TahomaRegular;
+  }
+}
+.our_values {
+  width: 100%;
+  padding-bottom: 70px;
+  .process_data {
+    span {
+      background-color: #fff;
+      border: 1px solid #acc682;
+    }
+    strong {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+.our_valuesMain {
+  width: 100%;
+}
+.contact {
+  width: 100%;
+  padding: 70px 0;
+  .custom_heading {
+    padding: 0 20px 50px;
+  }
+}
+.contact_inner {
+  width: 100%;
+}
+.contact_main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact_left {
+  width: 50%;
+  padding: 70px 20px;
+  background-color: $mainClr;
+}
+.contact_leftMain {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  > h2 {
+    font-size: 24px;
+    color: #fff;
+    font-family: $TahomaRegular;
+    font-weight: bold;
+    padding-bottom: 15px;
+    line-height: 1;
+  }
+  > p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+    font-family: $TahomaRegular;
+    padding-bottom: 30px;
+  }
+}
+.contact_data {
+  width: 100%;
+  padding-bottom: 40px;
+  ul {
+    margin: 0 -5px;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 33.33%;
+      padding: 0 5px;
+    }
+  }
+}
+.contact_info {
+  width: 100%;
+  text-align: center;
+  strong {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+    margin: 0 auto 20px;
+    i {
+      color: #fff;
+      font-size: 24px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+    }
+  }
+  a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-family: $TahomaRegular;
+  }
+}
+.contact_form {
+  width: 100%;
+  title {
+    display: block;
+    line-height: 1;
+    color: #fff;
+    font-size: 20px;
+    font-family: $TahomaRegular;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  ul {
+    margin: 0 -7px;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      padding: 0 7px 14px;
+      &.col_100 {
+        width: 100%;
+      }
+      .custom_field {
+        input {
+          border-radius: 0;
+        }
+        select {
+          border-radius: 0;
+        }
+        textarea {
+          border-radius: 0;
+        }
+      }
+      .my_btn {
+        text-align: center;
+        .custom_btn {
+          background-color: #fff;
+          color: $mainClrTwo;
+          border: 1px solid #fff;
+          font-weight: bold;
+          &:hover {
+            background-color: $mainClr;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }
