@@ -14,6 +14,8 @@ import Faqs from "./components/Faqs/Faqs";
 import { Modal, Button } from "react-bootstrap";
 import GardenRemediesNewton from "./components/gardenremedies/GardenRemediesNewton";
 import Partners from "./components/elements/Partners";
+import AboutUs from "./components/About/AboutUs";
+import ContactUs from "./components/Contact/ContactUs";
 function App() {
   const [show, setShow] = React.useState(true);
   const [older, setOlder] = React.useState(true);
@@ -53,6 +55,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="faqs" element={<Faqs />} />
             <Route path="partners" element={<Partners />} />
+            <Route path="about" element={<AboutUs/>} />
+            <Route path="contact" element={<ContactUs/>} />
             <Route
               path="garden-remedies-newton"
               element={<GardenRemediesNewton />}
