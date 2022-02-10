@@ -23,15 +23,15 @@ export default function Footer() {
                       Info@yourgreenpackage.com
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="tel:+(002) 234-56-678">
                       <i class="fa fa-phone" aria-hidden="true"></i>
                       +(002) 234-56-678
                     </a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="mailto:Info@gmail.com">
-                      <i className="fa fa-envelope"></i>Info@gmail.com
+                    <a href="mailto:Info@yourgreenpackage.com">
+                      <i className="fa fa-envelope"></i>Info@yourgreenpackage.com
                     </a>
                   </li>
                 </ul>
