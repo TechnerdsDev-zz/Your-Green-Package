@@ -141,7 +141,9 @@ export default function Partners({ isHome }) {
                   Search
                 </button>
               </div>
-              <span>dsdadasdasdk akjsdjlaskd klkaskmkdlkas </span>
+              <span>
+                <b>{despensaries}</b> delivers to your area
+              </span>
             </div>
           </div>
         </div>

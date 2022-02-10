@@ -566,9 +566,12 @@ main {
     display: block;
     text-align: center;
     width: 100%;
-    color: #fff;
+    color: #000;
     font-size: 18px;
     font-family: $TahomaRegular;
+    b {
+      font-weight: bold;
+    }
   }
   .custom_searchField {
     padding-bottom: 15px;
