@@ -550,6 +550,23 @@ main {
   padding-bottom: 20px;
 }
 
+.custom_search span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #000;
+  font-size: 18px;
+  font-family: "Tahoma-Regular-font";
+}
+
+.custom_search span b {
+  font-weight: bold;
+}
+
+.custom_search .custom_searchField {
+  padding-bottom: 15px;
+}
+
 .custom_searchField {
   width: 100%;
   display: -webkit-box;

@@ -18,112 +18,127 @@ export default function Faqs() {
                   <Accordian
                     question={"Who Can Place An Adult Use Delivery Order?"}
                     answer={
-                      " Anyone who is 21+ years of age, has created an account with NETA, lives in the delivery radius, and hascompleted the ID verification step."
+                      "A. Anyone who Is 21+ years of age and lives In a town that allows for adult use cannabis delivery."
                     }
                     eventKey={"1"}
                   />
                   <Accordian
                     question={"Who Can Accept An Adult Use Delivery Order?"}
-                    answer={""}
+                    answer={
+                      "Only the ordering customer can accept a delivery order. A delivery driver will validate the customers ID matches the ID provided when ordering."
+                    }
                     eventKey={"2"}
                   />
                   <Accordian
                     question={"How Do I Order Adult Use Delivery"}
-                    answer={""}
+                    answer={
+                      "Simply visit our partners page, select your dispensary, pick your favorite products, and delivery time."
+                    }
                     eventKey={"3"}
                   />
                   <Accordian
                     question={" Where Do You Deliver?"}
-                    answer={""}
+                    answer={
+                      "Simply visit our partners page, select your dispensary, pick your favorite products, and delivery time."
+                    }
                     eventKey={"4"}
                   />
                   <Accordian
-                    question={"How Do I Know When To Expect A Delivery?"}
-                    answer={""}
+                    question={"How Do I Pay For Delivery?"}
+                    answer={
+                      "You can pay for your delivery with exact cash or debit."
+                    }
                     eventKey={"5"}
                   />
                   <Accordian
                     question={"What Do I Need In Preparation For My Delivery?"}
-                    answer={""}
+                    answer={
+                      "In order to receive your delivery, you will need your payment (exact cash, debit card, or Canpay) and the physical copy of the government issued ID that was used for delivery registration."
+                    }
                     eventKey={"6"}
                   />
                   <Accordian
-                    question={"How Do I Know My ID Is Secure?"}
-                    answer={""}
+                    question={"How Do I Reschedule My Delivery?"}
+                    answer={
+                      "Yes, you can modify your delivery order by contacting the dispensary"
+                    }
                     eventKey={"7"}
                   />
                   <Accordian
                     question={"Where Can I Receive A Delivery?"}
-                    answer={""}
+                    answer={
+                      "You can receive a delivery at any residential address within our delivery radius. Some municipalities do not allow cannabis delivery services. You can check If we delivery to your area here (Include link)"
+                    }
                     eventKey={"8"}
                   />
                   <Accordian
-                    question={"Where Do You Deliver?"}
-                    answer={""}
+                    question={"How Often Do You Deliver?"}
+                    answer={
+                      "We delivery Monday - Sunday with multiple time slots each day. You can select your delivery time and day In the checkout process."
+                    }
                     eventKey={"9"}
-                  />
-                  <Accordian
-                    question={"How Do I Pay For Delivery?"}
-                    answer={""}
-                    eventKey={"9a"}
                   />
                   <Accordian
                     question={
                       "Can I Modify A Delivery Order After It’s Placed?"
                     }
-                    answer={""}
-                    eventKey={"8a"}
+                    answer={
+                      "Yes, you can modify your delivery order by contacting the dispensary you ordered from."
+                    }
+                    eventKey={"9a"}
                   />
                   <Accordian
-                    question={"How Do I Reschedule My Delivery?"}
-                    answer={""}
-                    eventKey={"7a"}
+                    question={"Where Can You Not Deliver?"}
+                    answer={
+                      "We cannot deliver to businesses. Including hotels, schools, federal and state buildings, or any residences with municipalities that have a cannabis delivery ban in place."
+                    }
+                    eventKey={"8a"}
                   />
                   <Accordian
                     question={
                       "What Happens If I’m Unavailable To Accept My Delivery?"
                     }
-                    answer={""}
-                    eventKey={"6a"}
+                    answer={
+                      "Your delivery will be canceled and you will need to submit a new delivery order for a future date."
+                    }
+                    eventKey={"7a"}
                   />
                   <Accordian
-                    question={" How Often Do You Deliver?"}
-                    answer={""}
-                    eventKey={"5a"}
+                    question={"How Do I Know When To Expect A Delivery?"}
+                    answer={
+                      "Delivery customers will have a range of times and days to choose from when finalizing their order. On the day of your delivery, we will notify you via a series of texts and emails to provide near, real time updates on the status of your delivery."
+                    }
+                    eventKey={"6a"}
                   />
                   <Accordian
                     question={
                       "When Do You Plan On Expanding Delivery To My Area?"
                     }
-                    answer={""}
+                    answer={
+                      "We will continue to expand our delivery radiuses as this portion of our business grows. Join our mailing list for updates on delivery expansion."
+                    }
+                    eventKey={"5a"}
+                  />
+                  <Accordian
+                    question={"Can An Out Of State Resident Order Delivery?"}
+                    answer={
+                      "Yes, as long as you have a government Issued ID, and your delivery address Is a residential address within one of our partners approved delivery radius."
+                    }
                     eventKey={"4a"}
                   />
                   <Accordian
-                    question={"What Is The “CCC”?"}
-                    answer={""}
+                    question={"How Discreet Is Cannabis/Marijuana Delivery?"}
+                    answer={
+                      "We respect your privacy by delivering your order in a discreet unmarked car with professionally dressed delivery drivers."
+                    }
                     eventKey={"3a"}
                   />
                   <Accordian
-                    question={"Where Can I Receive A Delivery?"}
-                    answer={""}
-                    eventKey={"2a"}
-                  />
-                  <Accordian
-                    question={"How Discreet Is Cannabis/Marijuana Delivery?"}
-                    answer={""}
-                    eventKey={"1a"}
-                  />
-                  <Accordian
-                    question={" Accordion Item #"}
-                    answer={""}
-                    eventKey={"1b"}
-                  />
-                  <Accordian
-                    question={
-                      "What Happens If My Government ID Address And  Delivery Address Don’t Match?"
+                    question={"What Is The “CCC”?"}
+                    answer={
+                      "The Cannabis Control Commission (CCC) is a state agency responsible for implementing and administering the laws enabling access to medical and adult use of marijuana in the Commonwealth of Massachusetts."
                     }
-                    answer={""}
-                    eventKey={"2b"}
+                    eventKey={"2a"}
                   />
                 </ul>
               </Accordion>

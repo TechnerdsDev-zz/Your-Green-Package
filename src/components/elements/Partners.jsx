@@ -140,9 +140,12 @@ export default function Partners({ isHome }) {
                 <button onClick={handleClick} className="custom_btn">
                   Search
                 </button>
-
-                <span>{despensaries}</span>
               </div>
+              {despensaries && (
+                <span>
+                  <b>{despensaries}</b> delivers to your area
+                </span>
+              )}
             </div>
           </div>
         </div>
