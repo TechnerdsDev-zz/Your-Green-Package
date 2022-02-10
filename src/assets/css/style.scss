@@ -562,6 +562,17 @@ main {
     font-family: $TahomaRegular;
     padding-bottom: 20px;
   }
+  span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-family: $TahomaRegular;
+  }
+  .custom_searchField {
+    padding-bottom: 15px;
+  }
 }
 .custom_searchField {
   width: 100%;
