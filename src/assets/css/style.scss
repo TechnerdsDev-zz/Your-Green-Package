@@ -721,6 +721,10 @@ main {
 }
 .join {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 500px;
   padding: 100px 0;
   background-color: $innerSection;
   background-image: url(../images/join.png);
@@ -1287,13 +1291,39 @@ input[type="number"] {
           background-color: #fff;
           color: $mainClrTwo;
           border: 1px solid #fff;
-          font-weight: bold;
           &:hover {
             background-color: $mainClr;
             color: #fff;
           }
         }
       }
+    }
+  }
+}
+.join_submit {
+  width: 100%;
+  display: none;
+  max-width: 450px;
+  padding: 30px 20px;
+  background-color: #fff;
+  @include radius_8();
+  h2 {
+    width: 100%;
+    color: #000;
+    font-family: $TahomaRegular;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    padding-bottom: 10px;
+  }
+  a {
+    display: inline-block;
+    font-size: 20px;
+    font-family: $TahomaRegular;
+    color: $mainClr;
+    @include transition_one();
+    &:hover {
+      color: #000;
     }
   }
 }

@@ -135,6 +135,10 @@ export default function Home() {
                   </ul>
                 </form>
               </div>
+              <div className="join_submit">
+                  <h2>Thank you for joining our texting list. </h2>
+                  <a href="">Click here to order from our partner</a>
+              </div>
             </div>
           </div>
         </div>
