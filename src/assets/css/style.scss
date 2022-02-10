@@ -1302,7 +1302,6 @@ input[type="number"] {
 }
 .join_submit {
   width: 100%;
-  display: none;
   max-width: 450px;
   padding: 30px 20px;
   background-color: #fff;
@@ -1319,9 +1318,20 @@ input[type="number"] {
   a {
     display: inline-block;
     font-size: 20px;
+    cursor: pointer;
     font-family: $TahomaRegular;
     color: $mainClr;
     @include transition_one();
+    &:not([href]):not([tabindex]) {
+      display: inline-block;
+      font-size: 20px;
+      font-family: $TahomaRegular;
+      color: $mainClr;
+      @include transition_one();
+      &:hover {
+        color: #000;
+      }
+    }
     &:hover {
       color: #000;
     }

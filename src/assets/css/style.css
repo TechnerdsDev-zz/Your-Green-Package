@@ -1531,7 +1531,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .join_submit {
   width: 100%;
-  display: none;
   max-width: 450px;
   padding: 30px 20px;
   background-color: #fff;
@@ -1555,6 +1554,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .join_submit a {
   display: inline-block;
   font-size: 20px;
+  cursor: pointer;
   font-family: "Tahoma-Regular-font";
   color: #76a12f;
   transition: all 0.4s ease;
@@ -1562,6 +1562,22 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
+}
+
+.join_submit a:not([href]):not([tabindex]) {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Tahoma-Regular-font";
+  color: #76a12f;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.join_submit a:not([href]):not([tabindex]):hover {
+  color: #000;
 }
 
 .join_submit a:hover {

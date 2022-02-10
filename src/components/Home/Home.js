@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import product from "../../assets/images/product.png";
 import order from "../../assets/images/order.png";
 import delivery from "../../assets/images/delivery.png";
@@ -7,8 +7,11 @@ import Blogs from "../elements/Blogs";
 import Banner from "../elements/Banner";
 import Partners from "../elements/Partners";
 import axios from "axios";
+import { useNavigate } from "react-router";
 export default function Home() {
+  const [submit, setSubmit] = useState(false);
   const joinList = useRef(null);
+  const navigate = useNavigate();
   const executeScroll = () => joinList.current.scrollIntoView();
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,8 +25,11 @@ export default function Home() {
       url: "https://formspree.io/f/mleapgkq",
       data: obj,
     }).then((response) => {
-      console.log(response);
+      setSubmit(true);
     });
+  };
+  const handleNavigate = () => {
+    navigate("partners");
   };
   return (
     <div className="main_container padding_top">
@@ -87,7 +93,7 @@ export default function Home() {
       </div>
       {/* work process section end */}
       {/* blogs section start */}
-      <Blogs />
+      {/* <Blogs /> */}
       {/* blogs section end */}
       {/* testimonials section start */}
       <Testimonial />
@@ -100,45 +106,51 @@ export default function Home() {
               <div className="custom_heading">
                 <h2>Join The List</h2>
               </div>
-              <div className="custom_form">
-                <form onSubmit={handleSubmit} action="">
-                  <ul>
-                    <li>
-                      <div className="custom_field">
-                        <input
-                          name="name"
-                          type="text"
-                          placeholder="Your Name"
-                        />
-                      </div>
-                    </li>
-                    <li>
-                      <div className="custom_field">
-                        <input
-                          type="number"
-                          name="phone"
-                          placeholder="Your Cellphone Number"
-                        />
-                      </div>
-                    </li>
-                    <li>
-                      <div className="my_btn">
-                        <input
-                          type="submit"
-                          className="custom_btn"
-                          value="Submit"
-                          name=""
-                          id=""
-                        />
-                      </div>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-              <div className="join_submit">
+              {!submit && (
+                <div className="custom_form">
+                  <form onSubmit={handleSubmit} action="">
+                    <ul>
+                      <li>
+                        <div className="custom_field">
+                          <input
+                            name="name"
+                            type="text"
+                            placeholder="Your Name"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <div className="custom_field">
+                          <input
+                            type="number"
+                            name="phone"
+                            placeholder="Your Cellphone Number"
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <div className="my_btn">
+                          <input
+                            type="submit"
+                            className="custom_btn"
+                            value="Submit"
+                            name=""
+                            id=""
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              )}
+              {submit && (
+                <div className="join_submit">
                   <h2>Thank you for joining our texting list. </h2>
-                  <a href="">Click here to order from our partner</a>
-              </div>
+                  <a onClick={handleNavigate}>
+                    Click here to order from our partner
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
