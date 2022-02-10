@@ -85,7 +85,7 @@ export default function Partners({ isHome }) {
                   </div>
                 </li>
                 <li>
-                  <div className="partner_main">
+                  <div style={{ height: "30%" }} className="partner_main">
                     <span>
                       <img src={mission} alt="Logo" />
                     </span>
@@ -140,7 +140,7 @@ export default function Partners({ isHome }) {
                 <button onClick={handleClick} className="custom_btn">
                   Search
                 </button>
-                <hr />
+
                 <span>{despensaries}</span>
               </div>
             </div>
