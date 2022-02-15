@@ -52,6 +52,13 @@ export default function Header() {
                 </ul>
               </div>
             </nav>
+            <div class="burger">
+              <div class="strip burger-strip">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

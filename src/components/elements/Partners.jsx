@@ -40,8 +40,13 @@ export default function Partners({ isHome }) {
                     </span>
                     <h4>Garden Remedies</h4>
                     <p>
-                      Your Green Package is making Cannabis Deliveries in the
-                      Greater Boston, Newton, and Northamptonarea.
+                      Founded in 2013, Garden Remedies is a provider of premium
+                      cannabis grown naturally in Central Massachusetts since
+                      2016. It grows, creates, tests and packages its products
+                      at its cultivation center in Fitchburg, offering its
+                      products at their Marlborough, Melrose and Newton
+                      adult-use and medical dispensaries, as well as to
+                      third-party dispensary partners across the Commonwealth
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
@@ -55,10 +60,13 @@ export default function Partners({ isHome }) {
                     <span>
                       <img src={neta} alt="Logo" />
                     </span>
-                    <h4>Garden Remedies</h4>
+                    <h4>Neta</h4>
                     <p>
-                      Your Green Package is making Cannabis Deliveries in the
-                      Greater Boston, Newton, and Northamptonarea.
+                      NETA is a passionate group of patient advocates,
+                      experienced professionals, industry leaders and
+                      philanthropists. We have come together to improve the
+                      quality of patients’ lives through personalized care and
+                      the best in the art and science of medical marijuana.
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
@@ -72,10 +80,11 @@ export default function Partners({ isHome }) {
                     <span>
                       <img src={rise} alt="Logo" />
                     </span>
-                    <h4>Garden Remedies</h4>
+                    <h4>Rise Chelsa</h4>
                     <p>
-                      Your Green Package is making Cannabis Deliveries in the
-                      Greater Boston, Newton, and Northamptonarea.
+                      At Rise Dispensaries, we open our doors to the novice and
+                      experienced alike with unmatched variety and service, all
+                      in a cozy environment to make you feel right at home.
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
@@ -85,17 +94,14 @@ export default function Partners({ isHome }) {
                   </div>
                 </li>
                 <li>
-                  <div style={{ height: "30%" }} className="partner_main">
+                  <div className="partner_main">
                     <span>
                       <img src={mission} alt="Logo" />
                     </span>
-                    <h4>Garden Remedies</h4>
+                    <h4>Mission Dispensaries</h4>
                     <p>
-                      Dedicated to bringing world-class cannabis products to
-                      Massachusetts, CommCan is the Commonwealth's true
-                      "home-grown" cannabis company. Family-owned and operated
-                      by native Massachusetts residents without any outside
-                      consultants, investors or management companies.
+                      Your Green Package is making Cannabis Deliveries in the
+                      Greater Boston, Newton, and Northamptonarea.
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">

@@ -1,1 +1,327 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media screen and (max-width: 767px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main_nav {
+    background-color: #fff;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+  }
+  .main_nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main_nav ul li {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+  .main_nav ul li:last-child {
+    padding-bottom: 0;
+  }
+  .main_nav ul li a {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .main_nav ul li a::after {
+    display: none;
+  }
+  .header {
+    padding: 15px 0;
+  }
+  .logo a img {
+    display: block;
+    max-width: 115px;
+  }
+  .padding_top {
+    padding-top: 75px;
+  }
+  .main_bannerInner {
+    background-size: 300px;
+    padding: 50px 0px;
+    background-image: none;
+  }
+  .auto_container {
+    padding: 0 15px;
+  }
+  .banner_heading h1 {
+    font-size: 22px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+  }
+  .banner_heading h4 {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+  }
+  .partner {
+    padding: 50px 0;
+  }
+  .custom_heading {
+    padding-bottom: 30px;
+  }
+  .custom_heading h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .custom_heading h2 {
+    width: 100%;
+    color: #000;
+    font-size: 20px;
+    font-family: "Tahoma-Regular-font";
+    font-weight: bold;
+  }
+  .partner_list ul {
+    margin: 0;
+  }
+  .partner_list ul li {
+    width: 100%;
+    padding: 0 0 30px;
+  }
+  .custom_searchField input {
+    min-width: 185px;
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+  .custom_searchField button {
+    font-size: 16px;
+    padding: 10px 10px 11px;
+    font-weight: 500;
+  }
+  .custom_btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+  .partner_main {
+    padding: 20px 15px;
+  }
+  .partner_main span {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px;
+  }
+  .partner_main span img {
+    max-width: 85px;
+  }
+  .partner_main h4 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .partner_main p {
+    font-size: 14px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+  }
+  .partner_main .my_btn a {
+    font-size: 16px;
+  }
+  .custom_search label {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+  .process {
+    padding: 50px 0 20px;
+  }
+  .process_list ul {
+    margin: 0;
+  }
+  .process_list ul li {
+    width: 100%;
+    padding: 0 0 40px;
+  }
+  .process_data span {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .process_data span img {
+    width: 40px;
+  }
+  .process_data strong {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  .process_data p {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .testimonial {
+    padding: 50px 0 80px;
+  }
+  .slider_main {
+    padding: 30px 10px 20px;
+  }
+  .slider_main figure {
+    width: 75px;
+    height: 75px;
+  }
+  .slider_main strong {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  .rating {
+    padding-bottom: 5px;
+  }
+  .testimonial .slick-arrow.slick-next {
+    right: 25%;
+  }
+  .testimonial .slick-arrow.slick-prev {
+    left: 25%;
+  }
+  .join {
+    padding: 50px 0;
+    background-image: none;
+    min-height: initial;
+  }
+  .custom_field input {
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+  .custom_field select {
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+  .custom_field textarea {
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+  .custom_form ul li {
+    padding-bottom: 15px;
+  }
+  .custom_form ul li:last-child {
+    padding-bottom: 0;
+  }
+  .custom_form ul li .my_btn .custom_btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .footer_top {
+    padding: 50px 0;
+  }
+  .footer_logo {
+    padding-bottom: 30px;
+  }
+  .footer_logo a img {
+    min-width: initial;
+    max-width: 150px;
+  }
+  .footer_list title {
+    padding-bottom: 15px;
+  }
+  .footer_list ul li {
+    padding-bottom: 10px;
+  }
+  .footer_list ul li a i {
+    font-size: 16px;
+  }
+  .footer_secondDiv {
+    padding-bottom: 30px;
+  }
+  .follow_us ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -3px;
+  }
+  .follow_us ul li {
+    padding: 0 3px 0;
+  }
+  .about_package {
+    padding: 50px 0;
+  }
+  .ab_packageLeft {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+  .ab_packageLeft span {
+    max-width: 150px;
+    margin: auto;
+  }
+  .ab_packageRight {
+    width: 100%;
+    padding-left: 0;
+  }
+  .ab_packageRight h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+  }
+  .ab_packageRight p {
+    font-size: 15px;
+  }
+  .our_values {
+    padding-bottom: 50px;
+  }
+  .faqs {
+    padding: 50px 0;
+  }
+  .accodian_main ul {
+    margin: 0;
+  }
+  .accodian_main ul li {
+    width: 100%;
+    padding: 0 0 15px;
+  }
+  .accodian_main ul li:last-child {
+    padding-bottom: 0;
+  }
+  .accordion-item h2 button {
+    padding: 10px 15px 10px 10px;
+    font-size: 13px;
+  }
+  .accordion-item h2 button b {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .accordion-item .accordion-body {
+    padding: 10px;
+  }
+  .accordion-item .accordion-body b {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .accordion-item .accordion-body p {
+    line-height: 1.2;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .contact_left {
+    width: 100%;
+    padding: 50px 15px;
+  }
+  .contact_left > h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .contact_left > p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .contact_data ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact_data ul li {
+    width: 50%;
+    padding: 0 5px 30px;
+  }
+  .contact_info a {
+    font-size: 14px;
+  }
+  .contact_data {
+    padding-bottom: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

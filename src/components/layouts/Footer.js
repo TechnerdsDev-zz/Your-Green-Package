@@ -41,25 +41,30 @@ export default function Footer() {
                 <div className="follow_us">
                   <ul>
                     <li>
-                      <a href="">
+                      <a href="https://twitter.com/yourgreenpackag">
                         <i className="fab fa-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://www.facebook.com/yourgreenpackag">
                         <i className="fab fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://www.linkedin.com/company/your-green-package">
                         <i className="fab fa-linkedin"></i>
                       </a>
                     </li>
-                    <li>
-                      <a href="">
+                    {/* <li>
+                      <a href="https://www.instagram.com/accounts/login/?next=/yourgreenpackageofficial/">
+                        <i className="fa fa-instagram"></i>
+                      </a>
+                    </li> */}
+                    {/* <li>
+                      <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0xa8d84efcb7ec030b:0x38100df0b75258b1!12e1?source=g.page.m.rc._&laa=merchant-web-dashboard-card">
                         <i className="fa fa-envelope"></i>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

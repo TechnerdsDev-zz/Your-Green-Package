@@ -49,10 +49,16 @@ $bgGrey: #e1e1e1;
   &:hover {
     background-color: #fff;
     color: $mainClr;
+    &:not([href]):not([tabindex]) {
+      color: $mainClr;
+    }
   }
   &.active {
     background-color: #fff;
     color: $mainClr;
+  }
+  &:not([href]):not([tabindex]) {
+    color: #fff;
   }
 }
 
@@ -416,9 +422,9 @@ main {
   width: 100%;
   background-image: url(../images/main_banner.png);
   background-position: center right;
-  background-size: 500px;
+  background-size: 300px;
   background-repeat: no-repeat;
-  padding: 70px 0px;
+  padding: 95px 0px 75px;
 }
 .banner_heading {
   width: 100%;
@@ -523,7 +529,8 @@ main {
   }
   p {
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
+    min-height: 210px;
     color: $mainClrTwo;
     line-height: 1.4;
     font-family: $TahomaRegular;
@@ -743,7 +750,7 @@ main {
   background-color: $innerSection;
   background-image: url(../images/join.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right center;
   background-size: 800px;
 }
 .join_inner {
@@ -893,7 +900,7 @@ input[type="number"] {
   width: auto;
   ul {
     display: flex;
-    margin: 0 -4px;
+    margin: 0 -8px;
     li {
       padding: 0 8px;
       a {
@@ -1010,6 +1017,19 @@ input[type="number"] {
       @include circular_border();
     }
   }
+  b {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: -80px auto 15px;
+    background-color: $innerSection;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: $mainClr;
+    @include circular_border();
+  }
   strong {
     display: block;
     color: $mainClrTwo;
@@ -1024,7 +1044,7 @@ input[type="number"] {
     max-width: 370px;
     margin: auto;
     color: $mainClrTwo;
-    font-family: $mainClrTwo;
+    font-family: $TahomaRegular;
     font-size: 16px;
     line-height: 1.3;
   }
@@ -1349,5 +1369,63 @@ input[type="number"] {
     &:hover {
       color: #000;
     }
+  }
+}
+.burger {
+  width: 45px;
+  height: 40px;
+  border-radius: 5px;
+  z-index: 2;
+  // background: white;
+  // box-shadow: rgba(136, 165, 191, 48%) 6px 2px 16px 0px,
+  //   rgba(255, 255, 255, 80%) -6px -2px 16px 0px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.5s ease;
+  &:hover {
+    background: rgb(56, 56, 56);
+    .strip {
+      div {
+        background: white;
+        margin: 10px;
+      }
+    }
+    .burger-strip div {
+      &:first-child {
+        transform: rotate(45deg) translateY(1px) translateX(5px);
+      }
+      &:nth-child(2) {
+        transform: rotate(-45deg);
+      }
+      &:last-child {
+        width: 26px;
+        transform: rotate(45deg) translateY(-13px) translateX(1px);
+      }
+    }
+  }
+}
+
+.burger-strip {
+  transition: all 0.5s ease;
+  div {
+    &:first-child {
+      width: 16px;
+    }
+    &:last-child {
+      width: 28px;
+    }
+  }
+}
+.strip {
+  div {
+    height: 3px;
+    border-radius: 2px;
+    background: rgb(56, 56, 56);
+    margin: 5px;
+    transition: all 0.55s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 35px;
   }
 }
