@@ -40,7 +40,7 @@ export default function Testimonial() {
       <div className="auto_container">
         <div className="testimonial_inner">
           <div className="custom_heading">
-            <h3>Testimonial</h3>
+            <h3>Testimonials</h3>
             <h2>Your Testimonial</h2>
           </div>
           <Slider {...settings}>

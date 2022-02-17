@@ -10,7 +10,8 @@ export default function Accordian(props) {
         </Accordion.Header>
         <Accordion.Body>
           <b>A.</b>
-          <p>{props.answer}</p>
+          <p>{props.answer}<a href="{props.link}">{props.link}</a></p>
+          {/* <link to="">{props.click}</link> */}
         </Accordion.Body>
       </Accordion.Item>
     </li>

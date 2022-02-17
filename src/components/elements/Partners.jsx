@@ -50,7 +50,7 @@ export default function Partners({ isHome }) {
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
-                        Join our List
+                        Order Now
                       </a>
                     </div>
                   </div>
@@ -69,8 +69,12 @@ export default function Partners({ isHome }) {
                       the best in the art and science of medical marijuana.
                     </p>
                     <div className="my_btn">
-                      <a href="" className="custom_btn">
-                        Join our List
+                      <a
+                        href="https://www.netacare.org/"
+                        className="custom_btn"
+                        target="_blank"
+                      >
+                        Order Now
                       </a>
                     </div>
                   </div>
@@ -88,7 +92,7 @@ export default function Partners({ isHome }) {
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
-                        Join our List
+                        Coming Soon
                       </a>
                     </div>
                   </div>
@@ -105,7 +109,7 @@ export default function Partners({ isHome }) {
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
-                        Join our List
+                        Coming Soon
                       </a>
                     </div>
                   </div>
@@ -125,14 +129,14 @@ export default function Partners({ isHome }) {
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
-                        Join our List
+                        Coming Soon
                       </a>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
-            <div className="custom_search">
+            <div className="custom_search" id="search">
               <label htmlFor="">
                 See which Partner delivers to your Zipcode
               </label>

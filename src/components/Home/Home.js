@@ -44,7 +44,7 @@ export default function Home() {
         <div className="auto_container">
           <div className="process_inner">
             <div className="custom_heading">
-              <h3>Work Process</h3>
+              {/* <h3>Work Process</h3> */}
               <h2>How Our Process Work</h2>
             </div>
             <div className="process_list">
@@ -54,11 +54,11 @@ export default function Home() {
                     <span>
                       <img src={product} alt="icon" />
                     </span>
-                    <strong>Select Products Instead</strong>
-                    <p>
+                    <strong>Select Products*</strong>
+                    {/* <p>
                       Sign up and make a profile with OrderReady or skip it and
                       log in with your social account - It’s only for one time!
-                    </p>
+                    </p> */}
                   </div>
                 </li>
                 <li>
@@ -66,11 +66,11 @@ export default function Home() {
                     <span>
                       <img src={delivery} alt="icon" />
                     </span>
-                    <strong>Select Your Delivery Window</strong>
-                    <p>
+                    <strong>Choose Your Delivery Window</strong>
+                    {/* <p>
                       Simply Login every time to enjoy a personalized experience
                       like never before.
-                    </p>
+                    </p> */}
                   </div>
                 </li>
                 <li>
@@ -78,12 +78,12 @@ export default function Home() {
                     <span>
                       <img src={order} alt="icon" />
                     </span>
-                    <strong>Order Now</strong>
-                    <p>
+                    <strong>Complete the Order</strong>
+                    {/* <p>
                       Whether it’s ordering food, booking events, or finding
                       things that matter to you, OrderReady lets you do all that
                       and more!
-                    </p>
+                    </p> */}
                   </div>
                 </li>
               </ul>

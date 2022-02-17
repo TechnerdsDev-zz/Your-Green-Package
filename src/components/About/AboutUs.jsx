@@ -26,8 +26,10 @@ export default function AboutUs() {
                   Massachusetts.
                 </h3>
                 <p>
-                  our Green Package Is a majority women and minority owned
-                  Marijuana Courier In Massachusetts.
+                  Your Green Package is a leading Massachusetts-based,
+                  minority-owned cannabis delivery. Your Green Package Is
+                  currently conducting deliveries In the greater Boston,
+                  Northampton, and Franklin area.
                 </p>
               </div>
             </div>

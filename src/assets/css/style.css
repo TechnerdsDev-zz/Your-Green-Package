@@ -1699,4 +1699,47 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   transition: all 0.55s cubic-bezier(0.075, 0.82, 0.165, 1);
   width: 35px;
 }
+
+.cobtact_right {
+  width: 50%;
+  position: relative;
+}
+
+.cobtact_right figure {
+  display: block;
+  width: 100%;
+}
+
+.cobtact_right figure img {
+  display: block;
+  width: 100%;
+}
+
+.location {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.location span {
+  display: block;
+  max-width: 30px;
+  margin: 0 auto 20px;
+}
+
+.location span img {
+  width: 100%;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

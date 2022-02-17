@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Accordian from "../elements/Accordian";
+
 export default function Faqs() {
   return (
     <div className="main_container padding_top">
@@ -42,6 +43,7 @@ export default function Faqs() {
                       "Simply visit our partners page, select your dispensary, pick your favorite products, and delivery time."
                     }
                     eventKey={"4"}
+                    // click={"Click Here"}
                   />
                   <Accordian
                     question={"How Do I Pay For Delivery?"}
@@ -67,7 +69,7 @@ export default function Faqs() {
                   <Accordian
                     question={"Where Can I Receive A Delivery?"}
                     answer={
-                      "You can receive a delivery at any residential address within our delivery radius. Some municipalities do not allow cannabis delivery services. You can check If we delivery to your area here (Include link)"
+                      "You can receive a delivery at any residential address within our delivery radius. Some municipalities do not allow cannabis delivery services. You can check If we delivery to your area here"
                     }
                     eventKey={"8"}
                   />
