@@ -12,7 +12,7 @@ export default function Partners({ isHome }) {
   const [despensaries, setDespensaries] = useState("");
   const navigate = useNavigate();
   const clickHandler = () => {
-    navigate("garden-remedies-newton");
+    navigate("../garden-remedies-newton");
   };
   const handleChange = (e) => {
     setCode(e.target.value);

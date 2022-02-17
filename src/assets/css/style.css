@@ -293,15 +293,6 @@ main {
   visibility: visible;
 }
 
-.main_nav ul li a.active {
-  color: #76a12f;
-}
-
-.main_nav ul li a.active::after {
-  opacity: 1;
-  visibility: visible;
-}
-
 .main_nav ul li a.custom_btn {
   color: #fff;
 }
@@ -312,6 +303,15 @@ main {
 
 .main_nav ul li a.custom_btn::after {
   display: none;
+}
+
+.main_nav ul li a.active {
+  color: #76a12f;
+}
+
+.main_nav ul li a.active::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .custom_btn {

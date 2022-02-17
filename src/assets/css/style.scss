@@ -390,13 +390,6 @@ main {
             visibility: visible;
           }
         }
-        &.active {
-          color: $mainClr;
-          &::after {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
         &.custom_btn {
           color: #fff;
           &:hover {
@@ -404,6 +397,13 @@ main {
           }
           &::after {
             display: none;
+          }
+        }
+        &.active {
+          color: $mainClr;
+          &::after {
+            opacity: 1;
+            visibility: visible;
           }
         }
       }
