@@ -8,7 +8,8 @@ sudo npm install
 
 # create bulid
 sudo npm run build
-cp -r /build/* /home/yourgreenpackage.technerdstesting.net/public_html
+
+cp  -r build/* ../
 
 #sudo cp src/.htaccess dist/iwillmessage-frontend
 

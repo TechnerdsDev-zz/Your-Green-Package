@@ -54,7 +54,7 @@ export default function Home() {
                     <span>
                       <img src={product} alt="icon" />
                     </span>
-                    <strong>Select Products*</strong>
+                    <strong>Select Products</strong>
                     {/* <p>
                       Sign up and make a profile with OrderReady or skip it and
                       log in with your social account - It’s only for one time!
