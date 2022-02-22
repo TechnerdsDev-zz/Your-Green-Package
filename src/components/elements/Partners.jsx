@@ -84,7 +84,7 @@ export default function Partners({ isHome }) {
                     <span>
                       <img src={rise} alt="Logo" />
                     </span>
-                    <h4>Rise Chelsa</h4>
+                    <h4>Rise Chelsea</h4>
                     <p>
                       At Rise Dispensaries, we open our doors to the novice and
                       experienced alike with unmatched variety and service, all
@@ -104,8 +104,14 @@ export default function Partners({ isHome }) {
                     </span>
                     <h4>Mission Dispensaries</h4>
                     <p>
-                      Your Green Package is making Cannabis Deliveries in the
-                      Greater Boston, Newton, and Northamptonarea.
+                      We think of Mission as a different kind of dispensary, not
+                      just filling orders, but fulfilling your needs as an
+                      individual. Whether you’re new to the world of cannabis or
+                      a seasoned canna-sseur, we got you covered. Over the last
+                      5 years, Mission has become one of New England's favorite
+                      dispensaries - renowned for crafting unforgettable
+                      experiences and award-winning products at sensible prices
+                      you won't find anywhere else.
                     </p>
                     <div className="my_btn">
                       <a href="" className="custom_btn">
