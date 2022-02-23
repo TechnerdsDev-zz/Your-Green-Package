@@ -17,12 +17,12 @@ export default function Footer() {
               <div className="footer_secondDiv footer_list">
                 <title>CONTACT US</title>
                 <ul>
-                  <li>
+                  {/* <li>
                     <a href="#">
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
                       Info@yourgreenpackage.com
                     </a>
-                  </li>
+                  </li> */}
                   {/* <li>
                     <a href="tel:+(002) 234-56-678">
                       <i class="fa fa-phone" aria-hidden="true"></i>
