@@ -147,7 +147,7 @@ export default function Home() {
                 <div className="join_submit">
                   <h2>Thank you for joining our texting list. </h2>
                   <a onClick={handleNavigate}>
-                    Click here to order from our partner
+                    Click here to order from our partners in the join list
                   </a>
                 </div>
               )}

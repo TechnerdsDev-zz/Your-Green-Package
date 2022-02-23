@@ -19,7 +19,7 @@ export default function ContactUs() {
               <div className="contact_main">
                 <div className="contact_left">
                   <div className="contact_leftMain">
-                    <h2>Thanks for joining!</h2>
+                    <h2>Thank you! Your message has been sent!</h2>
                   </div>
                 </div>
                 <div className="cobtact_right">

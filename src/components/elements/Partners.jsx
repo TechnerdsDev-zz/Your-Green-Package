@@ -34,7 +34,7 @@ export default function Partners({ isHome }) {
             <div className="partner_list">
               <ul>
                 <li>
-                  <div onClick={clickHandler} className="partner_main">
+                  <div className="partner_main">
                     <span>
                       <img src={garden} alt="Logo" />
                     </span>
@@ -49,7 +49,7 @@ export default function Partners({ isHome }) {
                       third-party dispensary partners across the Commonwealth
                     </p>
                     <div className="my_btn">
-                      <a href="" className="custom_btn">
+                      <a onClick={clickHandler} className="custom_btn">
                         Order Now
                       </a>
                     </div>

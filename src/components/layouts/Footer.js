@@ -55,11 +55,11 @@ export default function Footer() {
                         <i className="fab fa-linkedin"></i>
                       </a>
                     </li>
-                    {/* <li>
-                      <a href="https://www.instagram.com/accounts/login/?next=/yourgreenpackageofficial/">
-                        <i className="fa fa-instagram"></i>
+                    <li>
+                      <a href="https://www.instagram.com/yourgreenpackageofficial/">
+                        <i className="fab fa-instagram"></i>
                       </a>
-                    </li> */}
+                    </li>
                     {/* <li>
                       <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0xa8d84efcb7ec030b:0x38100df0b75258b1!12e1?source=g.page.m.rc._&laa=merchant-web-dashboard-card">
                         <i className="fa fa-envelope"></i>

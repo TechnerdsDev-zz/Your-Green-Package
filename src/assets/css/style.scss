@@ -498,6 +498,7 @@ main {
 }
 .partner_main {
   width: 100%;
+  height: 100%;
   background-color: #e0e0e0;
   padding: 20px;
   text-align: center;
@@ -530,7 +531,7 @@ main {
   p {
     width: 100%;
     font-size: 15px;
-    min-height: 210px;
+    min-height: 231px;
     color: $mainClrTwo;
     line-height: 1.4;
     font-family: $TahomaRegular;
@@ -540,10 +541,14 @@ main {
   .my_btn {
     a {
       font-size: 18px;
+      &[href=""] {
+        pointer-events: none;
+      }
     }
   }
   &:hover {
     background-color: $mainClr;
+    cursor: pointer;
     h4 {
       color: #fff;
     }
@@ -929,6 +934,17 @@ input[type="number"] {
           &.fa-envelope {
             background-color: #7fa53f;
           }
+          &.fa-instagram {
+            background: linear-gradient(
+              45deg,
+              #405de6,
+              #5851db,
+              #833ab4,
+              #c13584,
+              #e1306c,
+              #fd1d1d
+            );
+          }
           &:hover {
             background-color: #fff;
             @include box_shadow();
@@ -943,6 +959,10 @@ input[type="number"] {
             }
             &.fa-envelope {
               color: #7fa53f;
+            }
+            &.fa-instagram {
+              color: #f58529;
+              background: none;
             }
           }
         }
@@ -1438,6 +1458,8 @@ input[type="number"] {
     img {
       display: block;
       width: 100%;
+      max-height: 500px;
+      object-fit: cover;
     }
   }
 }
