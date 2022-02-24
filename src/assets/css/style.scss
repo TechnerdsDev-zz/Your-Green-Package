@@ -318,7 +318,7 @@ main {
 }
 
 .padding_top {
-  padding-top: 109px;
+  padding-top: 108px;
 }
 
 .header {
@@ -1401,7 +1401,28 @@ input[type="number"] {
   align-items: center;
   padding: 5px;
   transition: all 0.5s ease;
-  &:hover {
+  // &:hover {
+  //   background: rgb(56, 56, 56);
+  //   .strip {
+  //     div {
+  //       background: white;
+  //       margin: 10px;
+  //     }
+  //   }
+  //   .burger-strip div {
+  //     &:first-child {
+  //       transform: rotate(45deg) translateY(1px) translateX(5px);
+  //     }
+  //     &:nth-child(2) {
+  //       transform: rotate(-45deg);
+  //     }
+  //     &:last-child {
+  //       width: 26px;
+  //       transform: rotate(45deg) translateY(-13px) translateX(1px);
+  //     }
+  //   }
+  // }
+  &.active {
     background: rgb(56, 56, 56);
     .strip {
       div {

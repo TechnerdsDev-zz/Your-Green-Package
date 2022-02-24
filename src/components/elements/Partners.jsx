@@ -49,7 +49,7 @@ export default function Partners({ isHome }) {
     },
     {
       img: neta,
-      name: "Neta",
+      name: "NETA",
       description:
         "NETA is a passionate group of patient advocates, experienced professionals, industry leaders and philanthropists. We have come together to improve the quality of patients’ lives through personalized care and  the best in the art and science of medical marijuana.",
       subName: "Order Now",
@@ -119,6 +119,7 @@ export default function Partners({ isHome }) {
                               href="https://www.netacare.org/"
                               target="_blank"
                               className="custom_btn"
+                              rel="noreferrer"
                             >
                               {el.subName}
                             </a>
