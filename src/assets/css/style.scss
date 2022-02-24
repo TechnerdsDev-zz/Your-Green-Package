@@ -159,22 +159,19 @@ $bgGrey: #e1e1e1;
 ul {
   margin: 0px;
   padding: 0;
-}
-
-ul li {
-  list-style: none;
+  li {
+    list-style: none;
+  }
 }
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:focus {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .clr {
@@ -511,7 +508,6 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-
     @include circular_border();
     img {
       display: block;
