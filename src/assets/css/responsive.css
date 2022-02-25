@@ -4,10 +4,11 @@
     display: -ms-flexbox;
     display: flex;
   }
+
   .main_nav {
     background-color: #fff;
     position: fixed;
-    display: none;
+    /* display: none; */
     top: 0;
     left: 0;
     width: 100%;
@@ -16,7 +17,7 @@
   }
   .main_nav ul {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .main_nav ul li {
     width: 100%;
@@ -311,8 +312,8 @@
   }
   .contact_data ul {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .contact_data ul li {
     width: 50%;
