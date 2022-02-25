@@ -114,7 +114,7 @@ export default function Partners({ isHome }) {
                         <h4>{el.name}</h4>
                         <p>{el.description}</p>
                         <div className="my_btn">
-                          {el.name === "Neta" ? (
+                          {el.name === "NETA" ? (
                             <a
                               href="https://www.netacare.org/"
                               target="_blank"
