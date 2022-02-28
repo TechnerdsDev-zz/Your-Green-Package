@@ -57,10 +57,7 @@ export default function Header() {
                     </li>
 
                     <li>
-                      <NavLink
-                        to="garden-remedies-newton"
-                        className="custom_btn"
-                      >
+                      <NavLink to="partners" className="custom_btn">
                         Order Now
                       </NavLink>
                     </li>
