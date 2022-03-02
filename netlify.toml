@@ -3,4 +3,4 @@
   to = "https://widgets.dispenseapp.com"
   status = 200
   force = false
-  headers = {dispense-store-id = "075f447fd7e35cd9", dispense-menu-path = "/menu", x-forwarded-host = "yourgreenpackage.com" }
+  headers = {dispense-store-id = "075f447fd7e35cd9", dispense-menu-path = "/commcann-rehoboth", x-forwarded-host = "yourgreenpackage.com" }
