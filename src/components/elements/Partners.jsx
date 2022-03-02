@@ -126,7 +126,6 @@ export default function Partners({ isHome }) {
                           ) : el.name === "CommCan" ? (
                             <a
                               href="https://yourgreenpackage.com/commcann-rehoboth"
-                              target="_blank"
                               className="custom_btn"
                               rel="noreferrer"
                             >
