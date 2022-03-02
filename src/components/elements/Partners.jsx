@@ -73,7 +73,7 @@ export default function Partners({ isHome }) {
       name: "CommCan",
       description:
         "Dedicated to bringing world-class cannabis products to Massachusetts, CommCan is the Commonwealth's true home-grown cannabis company. Family-owned and operated by native Massachusetts residents without any outside consultants, investors or management companies.",
-      subName: "Coming Soon",
+      subName: "Order Now",
     },
   ]);
   useEffect(() => {
@@ -117,6 +117,15 @@ export default function Partners({ isHome }) {
                           {el.name === "NETA" ? (
                             <a
                               href="https://www.netacare.org/"
+                              target="_blank"
+                              className="custom_btn"
+                              rel="noreferrer"
+                            >
+                              {el.subName}
+                            </a>
+                          ) : el.name === "CommCan" ? (
+                            <a
+                              href="https://yourgreenpackage.com/commcann-rehoboth"
                               target="_blank"
                               className="custom_btn"
                               rel="noreferrer"
