@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/menu/*"
+  from = "/commcann-rehoboth/*"
   to = "https://widgets.dispenseapp.com"
   status = 200
   force = false
