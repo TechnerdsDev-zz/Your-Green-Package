@@ -29,7 +29,7 @@ export default function Partners({ isHome }) {
   const [despensaries, setDespensaries] = useState("");
   const navigate = useNavigate();
   const clickHandler = () => {
-    navigate("../garden-remedies-newton");
+    navigate("garden-remedies-newton");
   };
   const handleChange = (e) => {
     setCode(e.target.value);
@@ -94,14 +94,14 @@ export default function Partners({ isHome }) {
                 {lists.map((el) => (
                   <li>
                     {el.name === "Garden Remedies" ? (
-                      <div onClick={clickHandler} className="partner_main">
+                      <div className="partner_main">
                         <span>
                           <img src={el.img} alt="Logo" />
                         </span>
                         <h4>{el.name}</h4>
                         <p>{el.description}</p>
                         <div className="my_btn">
-                          <a href="" className="custom_btn">
+                          <a onClick={clickHandler} className="custom_btn">
                             {el.subName}
                           </a>
                         </div>
