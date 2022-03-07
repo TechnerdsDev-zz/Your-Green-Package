@@ -9,4 +9,3 @@
   to = "https://yourgreenpackage.com/garden-remedies-newton"
   status = 200
   force = false
-  headers = {dispense-menu-path = "/garden-remedies-newton", x-forwarded-host = "yourgreenpackage.com" }
