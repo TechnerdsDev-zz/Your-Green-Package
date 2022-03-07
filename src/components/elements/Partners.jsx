@@ -7,7 +7,6 @@ import rise from "../../assets/images/rise.png";
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import { arr } from "../../assets/data/Book";
-
 function shuffle(arra1) {
   var ctr = arra1.length,
     temp,
@@ -38,7 +37,6 @@ export default function Partners({ isHome }) {
     const obj = arr.find((el) => el["Zip Code"] == code);
     setDespensaries(obj.Dispensaries);
   };
-
   const [lists, setLists] = useState([
     {
       img: garden,
