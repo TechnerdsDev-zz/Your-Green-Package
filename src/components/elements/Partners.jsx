@@ -7,6 +7,8 @@ import rise from "../../assets/images/rise.png";
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import { arr } from "../../assets/data/Book";
+import { useLocation } from "react-router-dom";
+
 function shuffle(arra1) {
   var ctr = arra1.length,
     temp,
@@ -27,8 +29,9 @@ export default function Partners({ isHome }) {
   });
   const [despensaries, setDespensaries] = useState("");
   const navigate = useNavigate();
+  const history = useLocation();
   const clickHandler = () => {
-    navigate("garden-remedies-newton");
+    history.push("garden-remedies-newton");
   };
   const handleChange = (e) => {
     setCode(e.target.value);
