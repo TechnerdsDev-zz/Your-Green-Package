@@ -5,8 +5,8 @@
   force = false
   headers = {dispense-store-id = "075f447fd7e35cd9", dispense-menu-path = "/commcann-rehoboth", x-forwarded-host = "yourgreenpackage.com" }
 [[redirects]]
-  from = "/garden-remedies/*"
+  from = "/garden-remedies-newton/*"
   to = "https://widgets.dispenseapp.com/:splat"
   status = 200
   force = false
-  headers = {x-forwarded-host = "yourgreenpackage.com" }
+  headers = {dispense-store-id = "075f447fd7e35cd9", dispense-menu-path = "/garden-remedies-newton", x-forwarded-host = "yourgreenpackage.com" }
