@@ -9,4 +9,4 @@
   to = "https://widgets.dispenseapp.com/:splat"
   status = 200
   force = false
-  headers = {dispense-store-id = "075f447fd7e35cd9", dispense-menu-path = "/garden-remedies-newton", x-forwarded-host = "yourgreenpackage.com" }
+  headers = {dispense-menu-path = "/commcann-rehoboth", x-forwarded-host = "yourgreenpackage.com" }
