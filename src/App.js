@@ -58,7 +58,7 @@ function App() {
             <Route path="about" element={<AboutUs/>} />
             <Route path="contact" element={<ContactUs/>} />
             <Route
-              path="/garden-remedies-newton"
+              path="garden-remedies-newton"
               element={<GardenRemediesNewton />}
             />
           </Routes>

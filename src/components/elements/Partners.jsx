@@ -31,7 +31,7 @@ export default function Partners({ isHome }) {
   const navigate = useNavigate();
   // const history = useHistory();
   const clickHandler = () => {
-    navigate("/garden-remedies-newton");
+    navigate("garden-remedies-newton");
   };
   const handleChange = (e) => {
     setCode(e.target.value);
