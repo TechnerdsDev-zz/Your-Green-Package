@@ -4,8 +4,3 @@
   status = 200
   force = false
   headers = {dispense-store-id = "075f447fd7e35cd9", dispense-menu-path = "/commcann-rehoboth", x-forwarded-host = "yourgreenpackage.com" }
-[[redirects]]
-  from = "/garden-remedies-newton/*"
-  to = "https://yourgreenpackage.com/garden-remedies-newton"
-  status = 200
-  force = false
