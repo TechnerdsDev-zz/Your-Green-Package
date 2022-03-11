@@ -1333,6 +1333,7 @@ input[type="number"] {
         }
         textarea {
           border-radius: 0;
+          min-height: 140px;
         }
       }
       .my_btn {
@@ -1435,11 +1436,11 @@ input[type="number"] {
         transform: rotate(45deg) translateY(1px) translateX(5px);
       }
       &:nth-child(2) {
-        transform: rotate(-45deg);
+        transform: rotate(-45deg) translateX(1px);
       }
       &:last-child {
         width: 26px;
-        transform: rotate(45deg) translateY(-13px) translateX(1px);
+        transform: rotate(45deg) translateY(-14px) translateX(-1px);
       }
     }
   }

@@ -2,9 +2,278 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header {
+    padding: 15px 0;
+  }
+  .main_nav ul li a::after {
+    top: -38px;
+  }
+  .custom_btn {
+    padding: 10px 12px;
+  }
+  .padding_top {
+    padding-top: 89px;
+  }
+  .about_package {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .custom_heading {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 15px 0;
+  }
+  .main_nav {
+    ul {
+      margin: 0 -10px;
+      li {
+        padding: 0 10px;
+        a {
+          font-size: 16px;
+          &::after {
+            top: -31px;
+          }
+        }
+      }
+    }
+  }
+  .auto_container {
+    padding: 0 15px;
+  }
+  .logo a img {
+    display: block;
+    max-width: 130px;
+  }
+  .custom_btn {
+    padding: 11px 12px;
+  }
+  .padding_top {
+    padding-top: 80px;
+  }
+  .main_bannerInner {
+    background-size: 210px;
+    padding: 75px 0px 58px;
+  }
+  .banner_heading {
+    h1 {
+      font-size: 26px;
+      padding-bottom: 10px;
+    }
+    h4 {
+      font-size: 17px;
+      line-height: 1.3;
+      padding-bottom: 25px;
+    }
+  }
+  .partner {
+    padding: 40px 0;
+  }
+  .custom_heading {
+    padding-bottom: 30px;
+    h3 {
+      font-size: 20px;
+      padding-bottom: 5px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .partner_list {
+    padding-bottom: 30px;
+    ul {
+      margin: 0 -5px;
+      li {
+        padding: 0 5px 10px;
+      }
+    }
+  }
+  .partner_main {
+    padding: 15px 10px 65px;
+    position: relative;
+    span {
+      width: 115px;
+      height: 115px;
+      margin: 0 auto 15px;
+      img {
+        max-width: 90px;
+      }
+    }
+    h4 {
+      width: 100%;
+      color: #76a12f;
+      font-size: 18px;
+    }
+    p {
+      width: 100%;
+      font-size: 14px;
+      min-height: inherit;
+      padding-bottom: 10px;
+    }
+    .my_btn {
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .custom_search {
+    label {
+      font-size: 18px;
+      padding-bottom: 15px;
+    }
+    input {
+      font-size: 16px;
+      padding: 10px 10px;
+    }
+    button {
+      font-size: 16px;
+      padding: 11px 20px 12px;
+    }
+  }
+  .process {
+    padding: 40px 0;
+  }
+  .process_list {
+    ul {
+      margin: 0 -5px;
+      li {
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .process_data {
+    span {
+      width: 65px;
+      height: 65px;
+      margin: 0 auto 15px;
+      img {
+        width: 38px;
+      }
+    }
+    strong {
+      font-size: 18px;
+      padding-bottom: 0;
+    }
+    .process_data p {
+      font-size: 14px;
+    }
+  }
+  .testimonial {
+    padding: 40px 0;
+    .slick-arrow {
+      bottom: -12%;
+      &.slick-next {
+        right: 40%;
+      }
+      &.slick-prev {
+        left: 40%;
+      }
+    }
+  }
+  .slider_main {
+    padding: 30px 10px 20px;
+    b {
+      width: 70px;
+      height: 70px;
+      font-size: 40px;
+    }
+    strong {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .rating {
+    padding-bottom: 8px;
+  }
+  .join {
+    padding: 40px 0;
+    background-size: 400px;
+    min-height: inherit;
+  }
+  .join_main {
+    .custom_form {
+      max-width: 335px;
+      ul {
+        li {
+          padding-bottom: 20px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+          .custom_field {
+            input {
+              padding: 10px;
+              font-size: 16px;
+            }
+          }
+          .my_btn {
+            .custom_btn {
+              padding: 10px 25px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_top {
+    padding: 40px 0;
+  }
+  .footer_logo a img {
+    min-width: inherit;
+    width: 120px;
+  }
+  .footer_list {
+    title {
+      padding-bottom: 15px;
+    }
+  }
+  .about_package {
+    padding: 40px 0;
+  }
+  .ab_packageRight {
+    h3 {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .our_values {
+    padding-bottom: 40px;
+    .process_data strong {
+      padding-bottom: 10px;
+    }
+  }
+  .faqs {
+    padding: 40px 0;
+  }
+  .accordion-item h2 {
+    button {
+      padding: 8px 10px;
+      font-size: 14px;
+      b {
+        font-size: 22px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .accordion-item .accordion-body {
+    padding: 10px;
+    b {
+      font-size: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
