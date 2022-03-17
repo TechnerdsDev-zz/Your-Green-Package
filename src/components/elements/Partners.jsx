@@ -66,7 +66,7 @@ export default function Partners({ isHome }) {
       name: "Mission Dispensaries",
       description:
         " We think of Mission as a different kind of dispensary, notjust filling orders, but fulfilling your needs as anindividual. Whether you’re new to the world of cannabis o   a seasoned canna-sseur, we got you covered. Over the last  5 years, Mission has become one of New England's favorite dispensaries - renowned for crafting unforgettable experiences and award-winning products at sensible prices you won't find anywhere else.",
-      subName: "Coming Soon",
+      subName: "Order Now",
     },
     {
       img: cammcan,
@@ -126,6 +126,14 @@ export default function Partners({ isHome }) {
                           ) : el.name === "CommCan" ? (
                             <a
                               href="https://yourgreenpackage.com/commcann-rehoboth"
+                              className="custom_btn"
+                              rel="noreferrer"
+                            >
+                              {el.subName}
+                            </a>
+                          ) : el.name === "Mission Dispensaries" ? (
+                            <a
+                              href="https://yourgreenpackage.com/MissionBrookline"
                               className="custom_btn"
                               rel="noreferrer"
                             >
