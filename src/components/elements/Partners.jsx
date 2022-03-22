@@ -4,6 +4,7 @@ import cammcan from "../../assets/images/cammcan.png";
 import mission from "../../assets/images/mission_dispensaries.png";
 import neta from "../../assets/images/neta.png";
 import rise from "../../assets/images/rise.png";
+import insa from "../../assets/images/insa.jpg";
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import { arr } from "../../assets/data/Book";
@@ -75,6 +76,13 @@ export default function Partners({ isHome }) {
         "Dedicated to bringing world-class cannabis products to Massachusetts, CommCan is the Commonwealth's true home-grown cannabis company. Family-owned and operated by native Massachusetts residents without any outside consultants, investors or management companies.",
       subName: "Order Now",
     },
+    {
+      img: insa,
+      name: "INSA",
+      description:
+        "Insa is not some la-di-da so-and-so that’s going to carry you away to a land of make believe. It’s cannabis for real life: the good days and the ‘bout to get better. Insa offers premium cannabis in a variety of formats and functions to help wind you up, calm you down, ease your ailments—and whatever you need in between.",
+      subName: "Order Now",
+    },
   ]);
   useEffect(() => {
     const mountArray = shuffle([...lists]);
@@ -134,6 +142,14 @@ export default function Partners({ isHome }) {
                           ) : el.name === "Mission Dispensaries" ? (
                             <a
                               href="https://yourgreenpackage.com/MissionBrookline"
+                              className="custom_btn"
+                              rel="noreferrer"
+                            >
+                              {el.subName}
+                            </a>
+                          ) : el.name === "INSA" ? (
+                            <a
+                              href="https://yourgreenpackage.com/InsaSalem"
                               className="custom_btn"
                               rel="noreferrer"
                             >
