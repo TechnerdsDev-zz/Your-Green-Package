@@ -133,7 +133,7 @@ export default function Partners({ isHome }) {
                             </a>
                           ) : el.name === "CommCan" ? (
                             <a
-                              href="https://yourgreenpackage.com/commcann-rehoboth"
+                              href="https://yourgreenpackage.com/commcan-rehoboth"
                               className="custom_btn"
                               rel="noreferrer"
                             >
