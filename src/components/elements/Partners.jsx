@@ -81,7 +81,7 @@ export default function Partners({ isHome }) {
       name: "INSA",
       description:
         "Insa is not some la-di-da so-and-so that’s going to carry you away to a land of make believe. It’s cannabis for real life: the good days and the ‘bout to get better. Insa offers premium cannabis in a variety of formats and functions to help wind you up, calm you down, ease your ailments—and whatever you need in between.",
-      subName: "Order Now",
+      subName: "Coming Soon",
     },
   ]);
   useEffect(() => {
@@ -149,7 +149,7 @@ export default function Partners({ isHome }) {
                             </a>
                           ) : el.name === "INSA" ? (
                             <a
-                              href="https://yourgreenpackage.com/InsaSalem"
+                              //href="https://yourgreenpackage.com/InsaSalem"
                               className="custom_btn"
                               rel="noreferrer"
                             >
