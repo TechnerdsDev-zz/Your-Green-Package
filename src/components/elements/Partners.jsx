@@ -27,7 +27,7 @@ export default function Partners({ isHome }) {
   const [stateValue, setStateValue] = useState({
     name: "Garden Remedies",
   });
-  const [despensaries, setDespensaries] = useState("");
+  const [despensaries, setDespensaries] = useState("N/A");
   const navigate = useNavigate();
   const clickHandler = () => {
     navigate("garden-remedies-newton");
@@ -274,9 +274,15 @@ export default function Partners({ isHome }) {
                   Search
                 </button>
               </div>
-              {despensaries && (
+              {despensaries && despensaries != "N/A" && (
                 <span>
                   <b>{despensaries}</b> delivers to your area
+                </span>
+              )}
+
+              {!despensaries && (
+                <span>
+                  We currently do not deliver to this zipcode
                 </span>
               )}
             </div>
