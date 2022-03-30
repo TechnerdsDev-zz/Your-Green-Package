@@ -66,7 +66,7 @@ export default function Partners({ isHome }) {
       img: mission,
       name: "Mission Dispensaries",
       description:
-        " We think of Mission as a different kind of dispensary, notjust filling orders, but fulfilling your needs as anindividual. Whether you’re new to the world of cannabis o   a seasoned canna-sseur, we got you covered. Over the last  5 years, Mission has become one of New England's favorite dispensaries - renowned for crafting unforgettable experiences and award-winning products at sensible prices you won't find anywhere else.",
+        " We think of Mission as a different kind of dispensary, not just filling orders, but fulfilling your needs as an individual. Whether you’re new to the world of cannabis or   a seasoned canna-sseur, we got you covered. Over the last 5 years, Mission has become one of New England's favorite dispensaries - renowned for crafting unforgettable experiences and award-winning products at sensible prices you won't find anywhere else.",
       subName: "Order Now",
     },
     {
