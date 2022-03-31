@@ -8,6 +8,8 @@ import insa from "../../assets/images/insa.jpg";
 import { useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import { arr } from "../../assets/data/Book";
+import Modal from "react-bootstrap/Modal";
+import { Button } from "react-bootstrap";
 
 function shuffle(arra1) {
   var ctr = arra1.length,
@@ -23,6 +25,7 @@ function shuffle(arra1) {
   return arra1;
 }
 export default function Partners({ isHome }) {
+  const [modalShow, setModalShow] = React.useState(false);
   const [code, setCode] = useState();
   const [stateValue, setStateValue] = useState({
     name: "Garden Remedies",
@@ -35,10 +38,10 @@ export default function Partners({ isHome }) {
   const handleChange = (e) => {
     setCode(e.target.value);
   };
-  const handleClick = () => {
-    const obj = arr.find((el) => el["Zip Code"] == code);
-    setDespensaries(obj.Dispensaries);
-  };
+  // const handleClick = () => {
+  //   const obj = arr.find((el) => el["Zip Code"] == code);
+  //   setDespensaries(obj.Dispensaries);
+  // };
 
   const [lists, setLists] = useState([
     {
@@ -88,6 +91,182 @@ export default function Partners({ isHome }) {
     const mountArray = shuffle([...lists]);
     setLists(mountArray);
   }, []);
+
+  const ZipCode = (props) => {
+    if (!despensaries) {
+      setModalShow(false);
+    }
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter "
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            <strong>Your Green Package Partners</strong>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {despensaries && despensaries != "N/A" && (
+            <div className="my_btn">
+              <div className="my_btn">
+                {despensaries === "NETA" ? (
+                  <div className="card">
+                    <span>
+                      <img
+                        src={neta}
+                        alt="Logo"
+                        style={{
+                          display: "block",
+                          width: "50%",
+                          margin: "auto",
+                          maxWidth: "350px",
+                        }}
+                      />
+                    </span>
+                    <div className="container">
+                      <h1>{despensaries}</h1>
+                      <a
+                        href="https://www.netacare.org/"
+                        target="_blank"
+                        className="custom_btn_box"
+                        rel="noreferrer"
+                      >
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                ) : despensaries === "CommCan" ? (
+                  <div className="card">
+                    <span>
+                      <img
+                        src={cammcan}
+                        alt="Logo"
+                        style={{
+                          display: "block",
+                          width: "50%",
+                          margin: "auto",
+                          maxWidth: "350px",
+                        }}
+                      />
+                    </span>
+                    <div className="container">
+                      <h1>{despensaries}</h1>
+                      <a
+                        href="https://yourgreenpackage.com/commcan-rehoboth"
+                        className="custom_btn_box"
+                        rel="noreferrer"
+                      >
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                ) : despensaries === "Garden Remedies, NETA, Mission" ? (
+                  <>
+                    <div class="row">
+                      <div class="column">
+                        <div className="card_zip">
+                          <span>
+                            <img
+                              src={neta}
+                              alt="Logo"
+                              style={{
+                                display: "block",
+                                width: "50%",
+                                margin: "auto",
+                                maxWidth: "300px",
+                              }}
+                            />
+                          </span>
+                          <div className="container">
+                            <h1>NETA</h1>
+                            <a
+                              href="https://www.netacare.org/"
+                              className="custom_btn_box"
+                              rel="noreferrer"
+                            >
+                              Order Now
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div className="card_zip">
+                          <span>
+                            <img
+                              src={garden}
+                              alt="Logo"
+                              style={{
+                                display: "block",
+                                width: "50%",
+                                margin: "auto",
+                                maxWidth: "300px",
+                              }}
+                            />
+                          </span>
+                          <div className="container">
+                            <h1>Garden Remedies</h1>
+                            <a
+                              href
+                              onClick={clickHandler}
+                              className="custom_btn_box"
+                              rel="noreferrer"
+                            >
+                              Order Now
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column mx-auto">
+                        <div
+                          className="card_zip "
+                          style={{ marginTop: "20px" }}
+                        >
+                          <span>
+                            <img
+                              src={mission}
+                              alt="Logo"
+                              style={{
+                                display: "block",
+                                width: "50%",
+                                margin: "auto",
+                                maxWidth: "300px",
+                              }}
+                            />
+                          </span>
+                          <div className="container">
+                            <h1>Mission Dispensaries</h1>
+                            <a
+                              href="https://yourgreenpackage.com/MissionBrookline"
+                              className="custom_btn_box"
+                              rel="noreferrer"
+                            >
+                              Order Now
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                  <a href="" className="custom_btn">
+                    Order Now
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
+        </Modal.Body>
+        {/* <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer> */}
+      </Modal>
+    );
+  };
+
   return (
     <div className={isHome ? "" : "main_container padding_top"}>
       <div className="partner">
@@ -148,6 +327,7 @@ export default function Partners({ isHome }) {
                               {el.subName}
                             </a>
                           ) : el.name === "INSA" ? (
+                            // eslint-disable-next-line jsx-a11y/anchor-is-valid
                             <a
                               //href="https://yourgreenpackage.com/InsaSalem"
                               className="custom_btn"
@@ -156,6 +336,7 @@ export default function Partners({ isHome }) {
                               {el.subName}
                             </a>
                           ) : (
+                            // eslint-disable-next-line jsx-a11y/anchor-is-valid
                             <a href="" className="custom_btn">
                               {el.subName}
                             </a>
@@ -270,21 +451,22 @@ export default function Partners({ isHome }) {
                   type="number"
                   placeholder="Enter Your Zipcode"
                 />
-                <button onClick={handleClick} className="custom_btn">
+                <button
+                  // onClick={handleClick}
+                  onClick={() => {
+                    const obj = arr.find((el) => el["Zip Code"] == code);
+                    setDespensaries(obj.Dispensaries);
+                    setModalShow(true);
+                  }}
+                  className="custom_btn"
+                >
                   Search
                 </button>
               </div>
-              {despensaries && despensaries != "N/A" && (
-                <span>
-                  <b>{despensaries}</b> delivers to your area
-                </span>
-              )}
-
               {!despensaries && (
-                <span>
-                  We currently do not deliver to this zipcode
-                </span>
+                <span>We currently do not deliver to this zipcode</span>
               )}
+              <ZipCode show={modalShow} onHide={() => setModalShow(false)} />
             </div>
           </div>
         </div>
