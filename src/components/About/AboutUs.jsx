@@ -3,7 +3,9 @@ import aboutUs from "../../assets/images/about_us.png";
 import education from "../../assets/images/education.png";
 import diversity from "../../assets/images/diversity.png";
 import success from "../../assets/images/success.png";
+import { useNavigate } from "react-router-dom";
 export default function AboutUs() {
+  const navigate = useNavigate();
   return (
     <div className="main_container padding_top">
       {/* about us section start */}
@@ -22,13 +24,13 @@ export default function AboutUs() {
               </div>
               <div className="ab_packageRight">
                 <h3>
-                  Your Green Package is a licensed Marijuana Courier in
-                  Massachusetts.
+                  Your Green Package is a licensed Marijuana Courier and B2B
+                  Transporter in Massachusetts
                 </h3>
                 <p>
                   Your Green Package is a leading Massachusetts-based,
-                  minority-owned cannabis delivery. Your Green Package Is
-                  currently conducting deliveries In the greater Boston,
+                  minority-owned cannabis delivery service. Your Green Package
+                  Is currently conducting deliveries In the greater Boston,
                   Northampton, and Franklin area.
                 </p>
               </div>
@@ -102,6 +104,80 @@ export default function AboutUs() {
         </div>
       </div>
       {/* our values section end    */}
+      {/* our services section start */}
+      <div className="our_services">
+        <div className="auto_container">
+          <div className="serives_inner">
+            <div className="custom_heading">
+              <h2>Our Services</h2>
+            </div>
+            <div className="services_list">
+              <ul>
+                <li>
+                  <div className="service_data">
+                    <title>Cannabis Consumer Delivery Services</title>
+                    <ul>
+                      <li>
+                        <div class="my_btn">
+                          <a
+                            href=""
+                            onClick={() => navigate("../partners")}
+                            class="custom_btn"
+                          >
+                            Our Partners
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="my_btn">
+                          <a
+                            href=""
+                            onClick={() => navigate("../faqs")}
+                            class="custom_btn"
+                          >
+                            FAQs
+                          </a>
+                        </div>
+                      </li>
+                      {/* <li>
+                        <div class="my_btn">
+                          <a
+                            onClick={() => navigate("../blogs")}
+                            class="custom_btn"
+                          >
+                            Our Blogs
+                          </a>
+                        </div>
+                      </li> */}
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div className="service_data">
+                    <title>
+                      Business to Business Cannabis Transport Services
+                    </title>
+                    <ul>
+                      <li>
+                        <div class="my_btn">
+                          <a
+                            href=""
+                            onClick={() => navigate("../contact")}
+                            class="custom_btn"
+                          >
+                            Request a Transport
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* our services section end */}
     </div>
   );
 }

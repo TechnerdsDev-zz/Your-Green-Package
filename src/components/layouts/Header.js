@@ -42,11 +42,11 @@ export default function Header() {
                     <li>
                       <NavLink to="about">About Us</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink to="faqs" activeClassName="active">
                         FAQ
                       </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                       <NavLink to="partners" activeClassName="active">
                         Partners
@@ -55,7 +55,6 @@ export default function Header() {
                     <li>
                       <NavLink to="contact">Contact Us</NavLink>
                     </li>
-
                     <li>
                       <NavLink to="partners" className="custom_btn">
                         Order Now
