@@ -119,24 +119,24 @@ export default function AboutUs() {
                     <ul>
                       <li>
                         <div class="my_btn">
-                          <a
+                          <p
                             href=""
                             onClick={() => navigate("../partners")}
                             class="custom_btn"
                           >
                             Our Partners
-                          </a>
+                          </p>
                         </div>
                       </li>
                       <li>
                         <div class="my_btn">
-                          <a
+                          <p
                             href=""
                             onClick={() => navigate("../faqs")}
                             class="custom_btn"
                           >
                             FAQs
-                          </a>
+                          </p>
                         </div>
                       </li>
                       {/* <li>
@@ -160,13 +160,12 @@ export default function AboutUs() {
                     <ul>
                       <li>
                         <div class="my_btn">
-                          <a
-                            href=""
+                          <p
                             onClick={() => navigate("../contact")}
                             class="custom_btn"
                           >
                             Request a Transport
-                          </a>
+                          </p>
                         </div>
                       </li>
                     </ul>

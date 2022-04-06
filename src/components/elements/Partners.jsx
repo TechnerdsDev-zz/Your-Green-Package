@@ -131,7 +131,7 @@ export default function Partners({ isHome }) {
                       <a
                         href="https://www.netacare.org/"
                         target="_blank"
-                        className="custom_btn_box"
+                        className="custom_btn"
                         rel="noreferrer"
                       >
                         Order Now
@@ -156,7 +156,7 @@ export default function Partners({ isHome }) {
                       <h1>{despensaries}</h1>
                       <a
                         href="https://yourgreenpackage.com/commcan-rehoboth"
-                        className="custom_btn_box"
+                        className="custom_btn"
                         rel="noreferrer"
                       >
                         Order Now
@@ -184,7 +184,7 @@ export default function Partners({ isHome }) {
                             <h1>NETA</h1>
                             <a
                               href="https://www.netacare.org/"
-                              className="custom_btn_box"
+                              className="custom_btn"
                               rel="noreferrer"
                             >
                               Order Now
@@ -211,7 +211,7 @@ export default function Partners({ isHome }) {
                             <a
                               href
                               onClick={clickHandler}
-                              className="custom_btn_box"
+                              className="custom_btn"
                               rel="noreferrer"
                             >
                               Order Now
@@ -240,7 +240,7 @@ export default function Partners({ isHome }) {
                             <h1>Mission Dispensaries</h1>
                             <a
                               href="https://yourgreenpackage.com/MissionBrookline"
-                              className="custom_btn_box"
+                              className="custom_btn"
                               rel="noreferrer"
                             >
                               Order Now
