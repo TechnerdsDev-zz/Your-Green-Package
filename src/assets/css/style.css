@@ -320,6 +320,7 @@ main {
   display: inline-block;
   background-color: #76a12f;
   text-align: center;
+  cursor: pointer;
   padding: 14px 22px;
   border: 1px solid #76a12f;
   letter-spacing: 1px;
@@ -1768,7 +1769,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .our_services {
   width: 100%;
-  padding: 60px;
+  padding-bottom: 60px;
 }
 
 .serives_inner {

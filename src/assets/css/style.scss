@@ -32,6 +32,7 @@ $bgGrey: #e1e1e1;
     display: inline-block;
     background-color: $mainClr;
     text-align: center;
+    cursor: pointer;
     padding: 14px 22px;
     border: 1px solid $mainClr;
     letter-spacing: 1px;
@@ -1554,7 +1555,7 @@ input[type="number"] {
 
 .our_services {
     width: 100%;
-    padding: 60px;
+    padding-bottom: 60px;
 }
 
 .serives_inner {
