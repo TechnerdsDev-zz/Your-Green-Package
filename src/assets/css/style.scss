@@ -1679,3 +1679,9 @@ input[type="number"] {
 .modal-lg, .modal-xl {
     max-width: 700px;
 }
+.modal-header{
+    .modal-title{
+        display: block;
+        font-size: 18px;
+    }
+}
