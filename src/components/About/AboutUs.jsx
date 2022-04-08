@@ -30,7 +30,7 @@ export default function AboutUs() {
                 <p>
                   Your Green Package is a leading Massachusetts-based,
                   minority-owned cannabis delivery service. Your Green Package
-                  Is currently conducting deliveries In the greater Boston,
+                  is currently conducting deliveries in the greater Boston,
                   Northampton, and Franklin area.
                 </p>
               </div>
