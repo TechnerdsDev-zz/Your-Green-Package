@@ -9,6 +9,7 @@ export default function AboutUs() {
   return (
     <div className="main_container padding_top">
       {/* about us section start */}
+      {/* about us section start */}
       <div className="about_package">
         <div className="auto_container">
           <div className="about_packageMain">
