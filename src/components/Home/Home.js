@@ -95,12 +95,12 @@ export default function Home() {
       </div>
       {/* work process section end */}
       {/* blogs section start */}
-      {/* <BlogHome />
+      <BlogHome />
       <div class="my_btn text-center">
         <Link className="custom_btn" to={`blog-listing`}>
           See More
         </Link>
-      </div> */}
+      </div>
       {/* work process section end */}
       {/* blogs section start */}
       {/* <Blogs /> */}
