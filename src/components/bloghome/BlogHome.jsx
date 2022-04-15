@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 // import Markdown from "react-markdown";
 import ReactMarkdown from "react-markdown";
 
-export default function Blogs() {
+export default function BlogHome() {
   const excerptList = postlist.map((post) => {
     return post.content.split(" ").slice(0, 20).join(" ") + "...";
   });
+  var Data = postlist.slice(0, 3);
 
   return (
     <div className="blogs">
@@ -23,8 +24,8 @@ export default function Blogs() {
 
           <div className="blog_list">
             <ul>
-              {postlist.length &&
-                postlist.map((post, i) => {
+              {Data.length &&
+                Data.map((post, i) => {
                   return (
                     <li>
                       <div key={i} className="blog_main">
@@ -71,7 +72,7 @@ export default function Blogs() {
                           {/* <a href={`/post/${post.id}`}> */}
                           <Link
                             className="custom_btn"
-                            to={`/post/${post.id}`}
+                            to={`post/${post.id}`}
                             // to={{
                             //   pathname: `post/${post.id}`,
                             //   state: { posts: post.id },

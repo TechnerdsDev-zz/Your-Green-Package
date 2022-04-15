@@ -8,6 +8,8 @@ import Banner from "../elements/Banner";
 import Partners from "../elements/Partners";
 import axios from "axios";
 import { useNavigate } from "react-router";
+import BlogHome from "../bloghome/BlogHome";
+import { Link } from "react-router-dom";
 export default function Home() {
   const [submit, setSubmit] = useState(false);
   const joinList = useRef(null);
@@ -90,6 +92,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      {/* work process section end */}
+      {/* blogs section start */}
+      <BlogHome />
+      <div class="my_btn text-center">
+        <Link className="custom_btn" to={`blog-listing`}>
+          See More
+        </Link>
       </div>
       {/* work process section end */}
       {/* blogs section start */}

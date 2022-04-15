@@ -10,12 +10,13 @@ import Home from "./components/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router";
 import Faqs from "./components/Faqs/Faqs";
-
+import Post from "./pages/post";
 import { Modal, Button } from "react-bootstrap";
 import GardenRemediesNewton from "./components/gardenremedies/GardenRemediesNewton";
 import Partners from "./components/elements/Partners";
 import AboutUs from "./components/About/AboutUs";
 import ContactUs from "./components/Contact/ContactUs";
+import BlogListing from "./components/bloglisting/BlogListing";
 function App() {
   const [show, setShow] = React.useState(true);
   const [older, setOlder] = React.useState(true);
@@ -55,11 +56,17 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="faqs" element={<Faqs />} />
             <Route path="partners" element={<Partners />} />
-            <Route path="about" element={<AboutUs/>} />
-            <Route path="contact" element={<ContactUs/>} />
+            <Route path="about" element={<AboutUs />} />
+            <Route path="contact" element={<ContactUs />} />
+            <Route path="blog-listing" element={<BlogListing />} />
             <Route
               path="garden-remedies-newton"
               element={<GardenRemediesNewton />}
+            />
+            <Route
+              path="/post/:id"
+              // element={(props) => <Post {...props} />}
+              element={<Post />}
             />
           </Routes>
         </BrowserRouter>
